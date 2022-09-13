@@ -1,4 +1,5 @@
-from math_function import add
+import re
+from math_function import add, bagi, kali
 
 
 def main():
@@ -9,6 +10,10 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    elif operator == "-":
+        result = kali(data_1, data_2)
+    elif operator == "/":
+        result = bagi(data_1, data_2)
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
